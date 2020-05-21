@@ -62,15 +62,15 @@
                     \hfill \,}}
 
 % Finally, give us PDF bookmarks
-\usepackage{color,hyperref}
+\usepackage{color}
+\usepackage{hyperref}
 \usepackage[dvipsnames]{xcolor}
 \definecolor{red}{HTML}{9B0E0E}
 
 
 \hypersetup{colorlinks,breaklinks,
             linkcolor=red,urlcolor=red,
-            anchorcolor=red,citecolor=red,
-            }
+            anchorcolor=red,citecolor=red}
 
 \usepackage{anyfontsize}
 % The title (name) with a horizontal rule under it
@@ -101,7 +101,7 @@
 \noindent\hspace{-16mm}\MONTH ~ \the\year }
 \end{center}
 
-\vspace{10pt}
+\vspace{8pt}
 }
 
 \renewcommand{\section}[2]%
@@ -141,7 +141,9 @@
 
 \begin{minipage}{.49\textwidth}
 \begin{description}
- \item[Email:] \href{mailto:contact@oliviaguest.com}{contact@oliviaguest.com}
+ \item[Emails:] \href{mailto:o.guest@ucl.ac.uk}{o.guest@ucl.ac.uk}
+%  \href{mailto:o.guest@rise.org.cy}{o.guest@rise.org.cy}
+%  \href{mailto:contact@oliviaguest.com}{contact@oliviaguest.com}
  \item[Website:] \href{http://oliviaguest.com}{oliviaguest.com}
  \item[Blog:] \href{http://neuroplausible.com}{neuroplausible.com}
  \end{description}
@@ -153,8 +155,36 @@
  \item[ORCID:] \href{http://orcid.org/0000-0002-1891-0972}{0000-0002-1891-0972}
  \end{description}
 \end{minipage}
-\vspace{10pt}
+\vspace{8pt}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{CURRENT AFFILIATIONS}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+  \textbf{\href{https://rise.org.cy}{RISE}, Cyprus}
+  \begin{outerlist}
+  \item[\textbf{Research Centre on Interactive Media, Smart Systems and Emerging Technologies}]
+  \item[\textit{Researcher}] \hfill \textbf{2019--}
+  \end{outerlist}
+  \vspace{15pt}
+  
+  \textbf{\href{https://www.ucl.ac.uk/pals/research/experimental-psychology/}{Department of Experimental Psychology}, University College London, UK}
+\begin{outerlist}
+  \item[\textbf{\href{https://bradlove.org/}{Prof. Bradley C. Love's Lab}}] 
+  \item[\textit{Affiliated Researcher}] \hfill \textbf{2019--}
+
+  \end{outerlist}
+  \vspace{15pt}
+  
+  
+  \textbf{School of Mathematics, Computer Science and Engineering, City, \newline University of London, UK}
+  \begin{outerlist}
+  \item[\textbf{\href{https://cit-ai.net}{CitAI, Artificial Intelligence Research Centre}}]
+  \item[\textit{Affiliated Researcher}] \hfill \textbf{2019--}
+  \end{outerlist}
+
+  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{PROFESSIONAL\texorpdfstring{\newline}{ }EXPERIENCE}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -163,7 +193,11 @@
   \begin{outerlist}
   \item[\textbf{Research Centre on Interactive Media, Smart Systems and Emerging Technologies}]
   \item[\textit{Researcher}] \hfill \textbf{2019--}
-  
+    
+  \begin{innerlist}
+    \item  Funded by EU Horizon 2020 programme (grant 739578) and the Republic of Cyprus through the Directorate General for European Programmes, Coordination and Development.
+    \item Researching deep neural network models with respect to face processing, conceptual organisation and alignment, and cognitive science generally. 
+  \end{innerlist}
 %   Carry out independent research on my own as well as in collaboration with other research groups, apply for grants, 
   
   \end{outerlist}
@@ -175,16 +209,16 @@
 \begin{outerlist}
   \item[\textbf{\href{https://bradlove.org/}{Prof. Bradley C. Love's Lab}}] 
   \item[\textit{Affiliated Researcher}] \hfill \textbf{2019--}
-  
+    \begin{innerlist}
+    \item  Serving on hiring committees for postdoctoral fellows.
+    \item  Assisting with Cognitive and Decision Sciences M.Sc.
+    \item  Mentoring students and postdocs.
+
+  \end{innerlist}
   \end{outerlist}
   \vspace{15pt}
 
-  \textbf{School of Mathematics, Computer Science and Engineering, City, \newline University of London, UK}
-  \begin{outerlist}
-  \item[\textbf{\href{https://cit-ai.net}{CitAI, Artificial Intelligence Research Centre}}]
-  \item[\textit{Affiliated Researcher}] \hfill \textbf{2019--}
-  \end{outerlist}
-  \vspace{15pt}
+\begin{samepage}
 
 \textbf{\href{https://www.ucl.ac.uk/pals/research/experimental-psychology/}{Department of Experimental Psychology}, University College London, UK}
 \begin{outerlist}
@@ -194,10 +228,12 @@
     \item  Created computational models: for categorisation, for model-based fMRI, used deep neural networks, etc.
     \item  Mentored Ph.D. and M.Sc. students (CSML and DSML M.Sc.s)
     \item  Organised training courses for: git, continuous integration, module testing.
-    \item  Sat on hiring committees for postdoctoral fellows.
-    \item  Marked essays for Cognitive and Decision Sciences M.Sc.
+    \item  Served on hiring committees for postdoctoral fellows.
+    \item  Assisted with Cognitive and Decision Sciences M.Sc.
   \end{innerlist}
   \end{outerlist}
+  \end{samepage}
+
   \vspace{15pt}
 
   \textbf{\href{http://www.software.ac.uk/}{Software Sustainability Institute}, UK}
@@ -205,13 +241,14 @@
   \item[\textit{Fellow 2016}] \hfill \textbf{2016--2017}
   
   \begin{innerlist}
-    \item    £3,000 grant funding for travel and organising workshops.
+    \item    Received £3,000 grant funding for travel and organising workshops.
     \item  Organised training courses for: version control (git), Python.
     \item  Selected new fellows for 2017 and 2018.
   \end{innerlist}
   \end{outerlist}
   \vspace{15pt}
-
+  
+  \begin{samepage}
   \textbf{\href{http://www.psy.ox.ac.uk/}{Department of Experimental Psychology}, University of Oxford, UK}
   \begin{outerlist}
   \item[\textit{Postdoctoral Researcher}] \hfill \textbf{2014--2016}
@@ -223,8 +260,8 @@
   \end{innerlist}
 \end{outerlist}
   \vspace{15pt}
+  \end{samepage}
 
-\begin{samepage}
 \textbf{\href{http://www.bbk.ac.uk/psychology/}{Department of Psychological Sciences}, \href{http://www.bbk.ac.uk/}{Birkbeck}, UK}
 \begin{outerlist}
   \item[\textit{Graduate Teaching Assistant}] \hfill \textbf{2010--2014}
@@ -237,7 +274,6 @@
     \item Organised and led the \href{http://cccm.bbk.ac.uk/}{Centre for Cognition, Computation and Modelling}'s  seminar. 
   \end{innerlist}
 \end{outerlist}
-\end{samepage}
 
 
 
@@ -255,7 +291,7 @@
     \item 2nd Supervisor: \emph{Eddy J. Davelaar}
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
+\vspace{8pt}
 
 \textbf{\href{http://www.ucl.ac.uk/}{University College London}, UK} \hfill \textbf{2009--2010}
 \begin{outerlist}
@@ -265,7 +301,7 @@
     \item Supervisor: \emph{Richard P. Cooper}
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
+\vspace{8pt}
 
 \textbf{\href{http://www.york.ac.uk/}{The University of York}, UK} \hfill \textbf{2006--2009}
 \begin{outerlist}
@@ -277,84 +313,108 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{-10pt}
 \begin{outerlist}
-   \item[\textbf{\href{http://rescience.github.io/}{ReScience Journal}} --- \textit{Editor-in-Chief}] \hfill \textbf{2020--}
+   \item[\textbf{\href{http://rescience.github.io/}{ReScience C Journal}} --- \textit{Editor-in-Chief}] \hfill \textbf{2020--}
    
    \item[\textbf{\href{https://joss.theoj.org/}{The Journal of Open Source Software}} --- \textit{Topic Editor}] \hfill \textbf{2019--}
 
-   \item[\textbf{\href{http://rescience.github.io/}{ReScience Journal}} --- \textit{Associate Editor}] \hfill \textbf{2015--2020}
+   \item[\textbf{\href{http://rescience.github.io/}{ReScience C Journal}} --- \textit{Associate Editor}] \hfill \textbf{2015--2020}
    
- \item[\textbf{Ad hoc}] \hfill
+ \item[\textbf{Conferences (ad hoc)}] \hfill
  
-  International Conference on Cognitive Modelling (ICCM), International Conference on Machine Learning (ICML), Scientific Computing with Python Conference (SciPy), Cognitive Science Journal, Cognitive Psychology, Memory \& Cognition, PLOS Computational Biology.
+  International Conference on Cognitive Modelling (ICCM), International Conference on Machine Learning (ICML), Scientific Computing with Python Conference (SciPy).
+  
+   \item[\textbf{Journals (ad hoc)}] \hfill
+    
+    Cognitive Science Journal, Cognitive Psychology, Memory \& Cognition, PLoS Computational Biology, Journal of Cognitive Neuroscience.
+    
+   \item[\textbf{Special issue on \href{https://reproducibility-challenge.github.io/neurips2019/dates/}{NeurIPS 2019 Reproducibility Challenge}}] \hfill
+   
+   Co-editing special issue of Rescience C.
+
  \end{outerlist}
 
  
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{PUBLICATIONS}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\textbf{Guest, O.}, Kanayet, F. J., \& Love, B. C. (2019). \href{https://dx.doi.org/10.1007/s42001-019-00053-9}{Gerrymandering and Computational Redistricting}. \textit{Journal of Computational Social Science}. 
-\vspace{7.5pt}
-
-Rougier, N. P. et al. (2017). \href{http://dx.doi.org/10.7717/peerj-cs.142}{Sustainable computational science: the ReScience initiative}. \textit{PeerJ Computer Science}.   
-\vspace{7.5pt}
-
-Love, B. C., \textbf{Guest, O.}, Slomka, P., Navarro, V., Wasserman, E. (2017). \href{https://mindmodeling.org/cogsci2017/papers/0283/index.html}{Deep Networks as Models of Human and Animal Categorization}. \textit{In Proceedings of the 39th Annual Meeting of	the	Cognitive Science	Society}. (pp. 1457--1458). 
-\vspace{7.5pt}
-
-\textbf{Guest, O.} \& Love, B. C. (2017). \href{http://dx.doi.org/10.7554/eLife.21397}{What the Success of Brain Imaging Implies about the Neural Code}. \textit{eLife}, 6:e21397.
-\vspace{7.5pt}
-
-\textbf{Guest, O.} \& Rougier, N. P. (2016). \href{https://oliviaguest.com/doc/guest_rougier_2016.pdf}{What is computational reproducibility?} \textit{IEEE CIS Newsletter on Cognitive and Developmental Systems}, 13 (1).
-\vspace{7.5pt}
-
-\textbf{Guest, O.} (2016). \href{http://dx.doi.org/10.15200/winn.146590.01538}{Crisis in What Exactly?}. \textit{The Winnower}. 
-\vspace{7.5pt}
-
-Love, B. C., Kopeć, Ł. \& \textbf{Guest, O.} (2015). \href{http://dx.doi.org/10.1371/journal.pone.0137685}{Optimism Bias in Fans and Sports Reporters}. \textit{PLoS ONE}, 10 (9).
-\vspace{7.5pt}
-
-Cooper, R. P. \& \textbf{Guest, O.} (2014).  \href{http://dx.doi.org/10.1016/j.cogsys.2013.05.001}{Implementations are not specifications: specification, replication and experimentation in computational cognitive modeling}. \textit{Cognitive Systems Research}, 27, 42--49.
-\vspace{7.5pt}
-
-\textbf{Guest, O.}, Cooper, R. P. \& Davelaar, E. J. (2014).  [High-Level Cognition]. \href{http://oliviaguest.com/doc/guest_14.pdf}{The Influence of Implementation on ``Hub'' Models of Semantic Cognition}. In J. Mayor, P. Gomez (Eds.), \textit{\href{http://www.worldscientific.com/worldscibooks/10.1142/8747}{Computational Models of Cognitive Processes}} (pp. 155--169). World Scientific.
-\vspace{7.5pt}
-
-\textbf{Guest, O.}, Cooper, R. P. \& Davelaar, E. J. (2012). \href{http://eprints.bbk.ac.uk/6758/}{Semantic Cognition: A Re-examination of the Recurrent Network ``Hub'' Model}. \textit{In Proceedings of the Ninth International Conference on Cognitive Modelling.} Berlin, Germany. April. (pp. 259--264). Berlin, Germany. April. Universit\"{a}tsverlag der TU Berlin.
-
-
-
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{PREPRINTS \& UNPUBLISHED}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% \textbf{Guest, O.}, Martin, A. E., \& Birhane, A. (in prep.). {There is no such thing as AI}.
+% \vspace{7.5pt}
 
-\textbf{Guest, O.} \& Martin, A. E. (in prep; invited to special issue).  {How computational modeling can force theory building in psychological science}. \textit{Perspectives on Psychological Science}.
+% \textbf{Guest, O.} et al. (submitted to special issue). {Can ``open science'' make science open?}. \textit{Psychology of Women Quarterly}.
+% \vspace{7.5pt}
+
+Bobadilla Suarez, S., \textbf{Guest, O.}, \& Love, B. C. (revise and resubmit).  {The neural link between subjective value and decision entropy}. \textit{Communications Biology}.
+\newline
+\href{https://doi.org/10.1101/2020.02.18.954362}{doi.org/10.1101/2020.02.18.954362}
+\vspace{7.5pt}
+
+Barlas, P., Kyriakou, K., \textbf{Guest, O.}, Kleanthous, S., \& Otterbacher, J. (in prep). {Social B(eye)as Dataset v2.0: Automatically Tagging People Images in Context}.
+\vspace{7.5pt}
+
+Barlas, P., Kyriakou, K., \textbf{Guest, O.}, Kleanthous, S., \& Otterbacher, J. (in prep). {A ``Woman's Place'' is Nowhere: Image Tagging Algorithms Overlook Women Even in Stereotypically Feminine Contexts}.
+\vspace{7.5pt}
+
+\textbf{Guest, O.} \& Martin, A. E. (under review, invited to special issue).  \href{https://doi.org/10.31234/osf.io/rybh9}{How computational modeling can force theory building in psychological science}. \textit{Perspectives on Psychological Science}. \href{https://doi.org/10.31234/osf.io/rybh9}{doi.org/10.31234/osf.io/rybh9}
+\vspace{7.5pt}
+
+Whitaker, K. J. \& \textbf{Guest, O.} (invited, in press).  {\#bropenscience is broken science}. \textit{The Psychologist}.
+\vspace{7.5pt}
+
+\textbf{Guest, O.} \& Love, B. C. (2019). \href{https://dx.doi.org/10.1101/626374}{Levels of Representation in a Deep Learning Model of Categorization}. \textit{bioRxiv}. \href{https://doi.org/10.1101/626374}{doi.org/10.1101/626374}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{PUBLICATIONS}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textbf{Guest, O.}, Caso A. \& Cooper, R. P. (2020, in press).  {On Simulating Neural Damage in Connectionist Networks}. \textit{Computational Brain \& Behavior}
+ \href{https://doi.org/10.1007/s42113-020-00081-z}{doi.org/10.1007/s42113-020-00081-z}
+\vspace{7.5pt}
+
+Botvinik-Nezer, R. et al. (2020). \href{https://doi.org/10.1038/s41586-020-2314-9}{Variability in the analysis of a single neuroimaging dataset by many teams}. \textit{Nature}. \href{https://doi.org/10.1038/s41586-020-2314-9}{doi.org/10.1038/s41586-020-2314-9}
 \vspace{7.5pt}
 
 
-\textbf{Guest, O.} et al. (in prep; for special issue). {Can ``open science'' make science open?}. \textit{Psychology of Women Quarterly}.
+\textbf{Guest, O.}, Kanayet, F. J., \& Love, B. C. (2019). \href{https://dx.doi.org/10.1007/s42001-019-00053-9}{Gerrymandering and Computational Redistricting}. \textit{Journal of Computational Social Science}. 
+\href{https://dx.doi.org/10.1007/s42001-019-00053-9}{doi.org/10.1007/s42001-019-00053-9}
 \vspace{7.5pt}
 
-Bobadilla Suarez, S., \textbf{Guest, O.} \& Love, B. C. (in prep; available on request).  {The neural link between subjective value and decision entropy}.
+Rougier, N. P. et al. (2017). \href{http://dx.doi.org/10.7717/peerj-cs.142}{Sustainable computational science: the ReScience initiative}. \textit{PeerJ Computer Science}. \href{http://dx.doi.org/10.7717/peerj-cs.142}{doi.org/10.7717/peerj-cs.142}  
 \vspace{7.5pt}
 
-
-\textbf{Guest, O.}, Caso A. \& Cooper, R. P. (under review; available on request).  {On Simulating Neural Damage in Connectionist Networks}. \textit{Computational Brain \& Behaviour}
+Love, B. C., \textbf{Guest, O.}, Slomka, P., Navarro, V., Wasserman, E. (2017). \href{https://mindmodeling.org/cogsci2017/papers/0283/index.html}{Deep Networks as Models of Human and Animal Categorization}. \textit{In Proceedings of the 39th Annual Meeting of	the	Cognitive Science	Society}. (pp. 1457--1458).
 \vspace{7.5pt}
 
-Botvinik-Nezer, R. et al. (revise \& resubmit). \href{https://doi.org/10.1101/843193}{Variability in the analysis of a single neuroimaging dataset by many teams}. \textit{Nature}.
+\textbf{Guest, O.} \& Love, B. C. (2017). \href{http://dx.doi.org/10.7554/eLife.21397}{What the Success of Brain Imaging Implies about the Neural Code}. \textit{eLife}, 6:e21397.
+\href{http://dx.doi.org/10.7554/eLife.21397}{doi.org/10.7554/eLife.21397}
 \vspace{7.5pt}
 
-Whitaker, K. J. \& \textbf{Guest, O.} (in press).  {\#bropenscience is broken science}. \textit{The Psychologist}.
+\textbf{Guest, O.} \& Rougier, N. P. (2016). \href{https://oliviaguest.com/doc/guest_rougier_2016.pdf}{What is computational reproducibility?} \textit{IEEE CIS Newsletter on Cognitive and Developmental Systems}, 13 (1).
 \vspace{7.5pt}
 
-Botvinik-Nezer, R. et al. (2019). \href{https://doi.org/10.1101/843193}{Variability in the analysis of a single neuroimaging dataset by many teams.}  \textit{bioRxiv}.
+\textbf{Guest, O.} (2016). \href{http://dx.doi.org/10.15200/winn.146590.01538}{Crisis in What Exactly?}. \textit{The Winnower}. \newline
+\href{http://dx.doi.org/10.15200/winn.146590.01538}{doi.org/10.15200/winn.146590.01538}
 \vspace{7.5pt}
 
-\textbf{Guest, O.} \& Love, B. C. (2019). \href{https://dx.doi.org/10.1101/626374}{Levels of Representation in a Deep Learning Model of Categorization}. \textit{bioRxiv}. 
+Love, B. C., Kopeć, Ł. \& \textbf{Guest, O.} (2015). \href{http://dx.doi.org/10.1371/journal.pone.0137685}{Optimism Bias in Fans and Sports Reporters}. \textit{PLoS ONE}, 10 (9).
+\href{http://dx.doi.org/10.1371/journal.pone.0137685}{doi.org/10.1371/journal.pone.0137685}
+\vspace{7.5pt}
+
+Cooper, R. P. \& \textbf{Guest, O.} (2014).  \href{http://dx.doi.org/10.1016/j.cogsys.2013.05.001}{Implementations are not specifications: specification, replication and experimentation in computational cognitive modeling}. \textit{Cognitive Systems Research}, 27, 42--49.
+\href{http://dx.doi.org/10.1016/j.cogsys.2013.05.001}{doi.org/10.1016/j.cogsys.2013.05.001}
+\vspace{7.5pt}
+
+\textbf{Guest, O.}, Cooper, R. P. \& Davelaar, E. J. (2014).  [High-Level Cognition]. \href{http://oliviaguest.com/doc/guest_14.pdf}{The Influence of Implementation on ``Hub'' Models of Semantic Cognition}. In J. Mayor, P. Gomez (Eds.), \textit{\href{http://www.worldscientific.com/worldscibooks/10.1142/8747}{Computational Models of Cognitive Processes}} (pp. 155--169). World Scientific.
+\vspace{7.5pt}
+
+\begin{samepage}
+
+\textbf{Guest, O.}, Cooper, R. P. \& Davelaar, E. J. (2012). \href{http://eprints.bbk.ac.uk/6758/}{Semantic Cognition: A Re-examination of the Recurrent Network ``Hub'' Model}. \textit{In Proceedings of the Ninth International Conference on Cognitive Modelling.} Berlin, Germany. April. (pp. 259--264). Berlin, Germany. April. Universit\"{a}tsverlag der TU Berlin.
+
+\end{samepage}
+
+
 
 
 
@@ -362,95 +422,142 @@ Botvinik-Nezer, R. et al. (2019). \href{https://doi.org/10.1101/843193}{Variabil
 \section{INVITED\texorpdfstring{\newline}{ }TALKS}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\textbf{\href{}{MathPsych/ICCM 2020}}
+
+\textbf{\href{}{Bordeaux-Sud-Ouest Inria Research Centre}} 
 \begin{outerlist}
-  \item[] \textit{Toronto, Canada}\hfill\textbf{25--28 Jul 2020}
+  \item[] \textit{Bordeaux, France}\hfill\textbf{21--22 Sep 2020}
   \begin{innerlist}
-    \item Symposium: \textit{Perspectives on `What makes a good theory?'}
-    \item Organisers: Iris van Rooij, Chris Donkin 
+    \item Talk (TBD): \textit{How computational modeling can force theory building in psychological science}
+    \item Organiser: Nicolas P. Rougier
 
 
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
+\vspace{8pt}
+
+
+\textbf{\href{https://www.eventbrite.co.uk/o/reproducibilitea-ucl-19116673509}{ReproducibiliTea UCL}} 
+\begin{outerlist}
+  \item[] \textit{UCL, UK}\hfill\textbf{14 Sep 2020}
+  \begin{innerlist}
+    \item Talk: \textit{How computational modeling can force theory building in psychological science}
+    \item Organiser: Emma Norris, Tabea Schoeler, \&  Jessie Baldwin
+
+  \end{innerlist}
+\end{outerlist}
+\vspace{8pt}
+
+\textbf{\href{http://mathpsych.org/conferences/2020/}{MathPsych/ICCM 2020}} 
+\begin{outerlist}
+  \item[] \textit{Toronto, Canada}\hfill\textbf{25--28 Jul 2020}
+  \begin{innerlist}
+    \item Symposium: \textit{Perspectives on ``What makes a good theory?''}
+    \item Organisers: Iris van Rooij \& Chris Donkin 
+
+
+  \end{innerlist}
+\end{outerlist}
+\vspace{8pt}
+
+\textbf{\href{https://www.kcl.ac.uk/events/series/riot-science-club}{RIOT Science Club}} 
+\begin{outerlist}
+  \item[] \textit{King's College London, London, UK}\hfill\textbf{2 Jul 2020}
+  \begin{innerlist}
+    \item Talk (TBD): \textit{How computational modeling can force theory building in psychological science}
+    \item Organiser: Miguel Xochicale
+
+
+  \end{innerlist}
+\end{outerlist}
+\vspace{8pt}
+
+
+\textbf{\href{https://github.com/annahensch/Glasgow-ReproducibiliTea}{ReproducibiliTea Glasgow}} 
+\begin{outerlist}
+  \item[] \textit{Univeristy of Glasgow, UK}\hfill\textbf{20 Apr 2020}
+  \begin{innerlist}
+    \item Talk: \textit{\href{https://www.youtube.com/watch?v=_WV7EFvFAB8}{How computational modeling can force theory building in psychological science}}
+    \item Organisers: Anna Henschel \& Stephanie Allan
+    \item Speakers: Olivia Guest \& Andrea E. Martin
+
+
+  \end{innerlist}
+\end{outerlist}
+\vspace{8pt}
 
 \textbf{\href{http://www.rise.org.cy/en-gb/}{Research Centre on Interactive Media, Smart Systems and Emerging Technologies}}
 \begin{outerlist}
   \item[] \textit{Nicosia, Cyprus}\hfill\textbf{16 Jul 2019}
   \begin{innerlist}
-    \item \textit{\href{https://dx.doi.org/10.1101/626374}{What do deep neural networks know?}}
+    \item Talk: \textit{\href{https://dx.doi.org/10.1101/626374}{What do deep neural networks know?}}
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
+\vspace{8pt}
 
+\begin{samepage}
 \textbf{\href{https://icml.cc}{Thirty-fifth International Conference on Machine Learning (ICML 2018)}}
 \newline Workshop: \href{https://mltrain.cc/events/enabling-reproducibility-in-machine-learning-mltrainrml-icml-2018/}{Enabling Reproducibility in Machine Learning MLTrain@RML}
 \begin{outerlist}
   \item[] \textit{Stockholm, Sweden}\hfill\textbf{14 Jul 2018}
   \begin{innerlist}
-    \item \textit{\href{https://figshare.com/articles/Varieties_of_Reproducibility_in_Empirical_and_Computational_Domains/6818018}{Varieties of Reproducibility in Empirical and Computational Domains}}.
+    \item Talk:  \textit{\href{https://figshare.com/articles/Varieties_of_Reproducibility_in_Empirical_and_Computational_Domains/6818018}{Varieties of Reproducibility in Empirical and Computational Domains}}.
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
+\vspace{8pt}
+\end{samepage}
 
 \textbf{\href{http://opendataday.org/}{Open Data Day 2018}}
 \begin{outerlist}
   \item[] \textit{Goldsmiths, University of London, UK}\hfill\textbf{3 Mar 2018}
   \begin{innerlist}
-    \item \textit{\href{http://figshare.com/articles/Gerrymandering_and_Computational_Redistricting/5605387}{Gerrymandering and Computational Redistricting}}.
+    \item Talk:  \textit{\href{http://figshare.com/articles/Gerrymandering_and_Computational_Redistricting/5605387}{Gerrymandering and Computational Redistricting}}.
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
+\vspace{8pt}
 
 \textbf{\href{https://psychology.stanford.edu/events/frisem}{Cognitive Neuroscience Friday Seminar (FriSem)}}
 \begin{outerlist}
   \item[] \textit{Stanford University, California, USA}\hfill\textbf{16 Feb 2018}
   \begin{innerlist}
-    \item \textit{How deep networks contribute to our understanding of human and animal representation in categorization}.
+    \item Talk: \textit{How deep networks contribute to our understanding of human and animal representation in categorization}.
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
+\vspace{8pt}
 
 \textbf{\href{http://www.ucl.ac.uk/research-it-services/research-software-development/programming-hub/tech-socials}{Research Programming Technical Social}}
 \begin{outerlist}
   \item[] \textit{University College London, UK}\hfill\textbf{15 Nov 2017}
   \begin{innerlist}
-    \item \textit{\href{https://figshare.com/articles/Gerrymandering_and_Computational_Redistricting/5605387/3}{Gerrymandering and Computational Redistricting}}.
+    \item Talk: \textit{\href{https://figshare.com/articles/Gerrymandering_and_Computational_Redistricting/5605387/3}{Gerrymandering and Computational Redistricting}}.
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
+\vspace{8pt}
 
-\begin{samepage}
 \textbf{\href{http://www.ru.nl/cls/}{Centre for Language Studies}}
 \begin{outerlist}
   \item[] \textit{Radboud University, The Netherlands}\hfill\textbf{8 Mar 2017}
   \begin{innerlist}
-    \item \textit{\href{https://figshare.com/articles/What_the_Success_of_Brain_Imaging_Implies_about_the_Neural_Code/4252022}{What the Success of Brain Imaging Implies about the Neural Code}}.
+    \item Talk: \textit{\href{https://figshare.com/articles/What_the_Success_of_Brain_Imaging_Implies_about_the_Neural_Code/4252022}{What the Success of Brain Imaging Implies about the Neural Code}}.
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
-\end{samepage}
+\vspace{8pt}
 
-\begin{samepage}
 \textbf{\href{http://ljdm.info}{London Judgement and Decision Making Seminars}}
 \begin{outerlist}
   \item[] \textit{University College London, UK}\hfill\textbf{8 Feb 2017}
   \begin{innerlist}
-    \item \textit{\href{https://figshare.com/articles/What_the_Success_of_Brain_Imaging_Implies_about_the_Neural_Code/4252022}{What the Success of Brain Imaging Implies about the Neural Code}}.
+    \item Talk: \textit{\href{https://figshare.com/articles/What_the_Success_of_Brain_Imaging_Implies_about_the_Neural_Code/4252022}{What the Success of Brain Imaging Implies about the Neural Code}}.
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
-\end{samepage}
+\vspace{8pt}
 
-\begin{samepage}
 \textbf{\href{http://decisions.psy.ox.ac.uk/}{Summerfield Lab}}
 \begin{outerlist}
   \item[] \textit{University of Oxford, UK}\hfill\textbf{23 Nov 2016}
   \begin{innerlist}
-    \item \textit{\href{https://figshare.com/articles/What_the_Success_of_Brain_Imaging_Implies_about_the_Neural_Code/4252022}{What the Success of Brain Imaging Implies about the Neural Code}}.
+    \item Talk: \textit{\href{https://figshare.com/articles/What_the_Success_of_Brain_Imaging_Implies_about_the_Neural_Code/4252022}{What the Success of Brain Imaging Implies about the Neural Code}}.
   \end{innerlist}
 \end{outerlist}
-\end{samepage}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{CONFERENCE \texorpdfstring{\newline}{ } PRESENTATIONS}
@@ -465,7 +572,7 @@ Botvinik-Nezer, R. et al. (2019). \href{https://doi.org/10.1101/843193}{Variabil
     \item{Presented by: S. Bobadilla Suarez}
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
+\vspace{8pt}
 
 
 
@@ -476,8 +583,7 @@ Botvinik-Nezer, R. et al. (2019). \href{https://doi.org/10.1101/843193}{Variabil
     \item Talk and poster:  \textit{Levels of Representation in a Deep Learning Model of Categorization}.
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
-
+\vspace{8pt}
 
 \textbf{\href{http://www.cogs.indiana.edu/asic/2019/index.shtml}{18th Annual Summer Interdisciplinary Conference (ASIC 2019)}}
 \begin{outerlist}
@@ -486,7 +592,7 @@ Botvinik-Nezer, R. et al. (2019). \href{https://doi.org/10.1101/843193}{Variabil
     \item Talk: \textit{Levels of Representation in a Deep Learning Model of Categorization}.
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
+\begin{samepage}
 
 \textbf{\href{http://www.cognitivesciencesociety.org/conference/cogsci2017/}{ 39th Annual Meeting of the Cognitive Science Society (CogSci 2017)}}
 \begin{outerlist}
@@ -495,7 +601,9 @@ Botvinik-Nezer, R. et al. (2019). \href{https://doi.org/10.1101/843193}{Variabil
     \item Talk: \textit{Deep Networks as Models of Human and Animal Categorization}.
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
+\vspace{8pt}\end{samepage}
+
+\begin{samepage}
 
 \textbf{\href{http://www.cogs.indiana.edu/asic/2017/index.shtml}{16th Annual Summer Interdisciplinary Conference (ASIC 2017)}}
 \begin{outerlist}
@@ -504,7 +612,8 @@ Botvinik-Nezer, R. et al. (2019). \href{https://doi.org/10.1101/843193}{Variabil
     \item Talk: \textit{Deep Networks as Models of Human and Animal Categorization}.
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
+
+\vspace{8pt}\end{samepage}
 
 \textbf{\href{http://wp.lancs.ac.uk/lcicd/past-events/}{1st Lancaster Conference on Infant and Early Child Development (LCICD 2016)}}
 \begin{outerlist}
@@ -513,7 +622,7 @@ Botvinik-Nezer, R. et al. (2019). \href{https://doi.org/10.1101/843193}{Variabil
     \item Talk: \textit{Representational Re-description in hSOMs}.
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
+\vspace{8pt}
 
 \textbf{\href{http://www.cogs.indiana.edu/asic/2016/index.shtml}{15th Annual Summer Interdisciplinary Conference (ASIC 2016)}}
 \begin{outerlist}
@@ -522,9 +631,8 @@ Botvinik-Nezer, R. et al. (2019). \href{https://doi.org/10.1101/843193}{Variabil
     \item Talk: \textit{What the Success of Brain Imaging Implies about the Neural Code}.
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
+\vspace{8pt}
 
-\begin{samepage}
 \textbf{\href{http://www.cogs.indiana.edu/asic/2015/index.shtml}{14th Annual Summer Interdisciplinary Conference (ASIC 2015)}}
 \begin{outerlist}
   \item[] \textit{Mammoth Lakes, California, USA}\hfill\textbf{10--15 Jul 2015}
@@ -532,8 +640,7 @@ Botvinik-Nezer, R. et al. (2019). \href{https://doi.org/10.1101/843193}{Variabil
     \item Talk: \textit{Optimism Bias in Novice and Expert Sport Forecasting}.
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
-\end{samepage}
+\vspace{8pt}
 
 \textbf{\href{http://www.bcbl.eu/events/ncpw13/}{13th Neural Computation and Psychology Workshop (NCPW 13)}}
 \begin{outerlist}
@@ -542,7 +649,7 @@ Botvinik-Nezer, R. et al. (2019). \href{https://doi.org/10.1101/843193}{Variabil
     \item Talk: \textit{Exploring the influence of architecture and learning algorithm on the breakdown of the ``hub'' model of semantic cognition}.
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
+\vspace{8pt}
 
 \textbf{\href{http://iccm-conference.org/2012/}{11th International Conference on Cognitive Modeling (ICCM 2012)}}
 \begin{outerlist}
@@ -567,7 +674,7 @@ Botvinik-Nezer, R. et al. (2019). \href{https://doi.org/10.1101/843193}{Variabil
     \item Reviewed conference submissions.
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
+\vspace{8pt}
 
 \textbf{\href{http://womenincogsci.org/announcement/wics-workshop-cognitive-science-society-meeting-madison-wisconsin}{Women in Cognitive Science (WiCS) Panel at 40th Annual Meeting of the Cognitive Science Society (CogSci 2018)}}
 \begin{outerlist}
@@ -575,10 +682,11 @@ Botvinik-Nezer, R. et al. (2019). \href{https://doi.org/10.1101/843193}{Variabil
   \begin{innerlist}
     \item Topic: Women and Gender Minorities in Computational Cognitive Science: Sharing Experiences.
     \item Co-organised with Nora S. Newcombe.
-    \item Panel members: Eliana Colunga, Rebecca Frost, Amy Perfors, and myself.
+    % \item Panel members: Eliana Colunga, Amy Perfors, and myself.
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
+\vspace{8pt}
+\begin{samepage}
 
 \textbf{\href{https://scipy2017.scipy.org}{16th Scientific Computing with Python Conference (SciPy 2017)}}
 \begin{outerlist}
@@ -588,7 +696,9 @@ Botvinik-Nezer, R. et al. (2019). \href{https://doi.org/10.1101/843193}{Variabil
     \item Reviewed conference submissions.
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
+\vspace{8pt}\end{samepage}
+
+\begin{samepage}
 
 \textbf{\href{http://www.software.ac.uk/rdvw/}{Research Data Visualisation Workshop (RDVW)}}
 \begin{outerlist}
@@ -599,7 +709,8 @@ Botvinik-Nezer, R. et al. (2019). \href{https://doi.org/10.1101/843193}{Variabil
     \item Obtained funding from \href{https://www.rstudio.com/}{RStudio}.
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
+\vspace{8pt}
+\end{samepage}
 
 \textbf{\href{https://sites.google.com/site/introcompcog/}{Introduction to Computational Cognitive Modelling Workshop}}
 \begin{outerlist}
@@ -616,7 +727,7 @@ Botvinik-Nezer, R. et al. (2019). \href{https://doi.org/10.1101/843193}{Variabil
 
 \textbf{\href{http://www.psy.ox.ac.uk/}{Department of Experimental Psychology}, \href{http://ox.ac.uk/}{University of Oxford}, UK}
 \begin{outerlist}
-    \item[Postdoctoral Research Assistant] \hfill \textbf{2014--}
+    \item[Postdoctoral Research Assistant] \hfill \textbf{2014--2016}
     \item[\textit{\href{http://oliviaguest.com/connectionism}{Block Practical: Connectionist Models and Cognitive Processes}}] \
   \begin{innerlist}
     \item Module: \textit{Third Year, B.Sc.}
@@ -630,7 +741,7 @@ Botvinik-Nezer, R. et al. (2019). \href{https://doi.org/10.1101/843193}{Variabil
     \item Set essays and marked exams.
   \end{innerlist}
 \end{outerlist}
-\vspace{10pt}
+\vspace{8pt}
 
 \textbf{\href{http://www.bbk.ac.uk/psychology/}{Department of Psychological Sciences}, \href{http://www.bbk.ac.uk/}{Birkbeck, University of London},
 UK}
@@ -641,17 +752,23 @@ UK}
 \end{outerlist}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{MEDIA}
+\section{MAINSTREAM MEDIA}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{-10pt}
 
+
 \begin{outerlist}
- \item[\textbf{\href{http://www.bbc.co.uk/radio4}{BBC Radio 4:}} \href{http://www.bbc.co.uk/programmes/b0713zdz}{Today Show}] \hfill\textbf{22 Feb 2016}
+ \item[\textbf{\href{https://dx.doi.org/10.1007/s42001-019-00053-9}{Gerrymandering and computational redistricting}}] \hfill\textbf{2017}
+\begin{innerlist}
+	\item Media Coverage: \href{https://www.seeker.com/tech/an-unbiased-algorithm-could-help-put-an-end-to-partisan-gerrymandering}{\textit{An Unbiased Algorithm Could Help Put an End to Partisan Gerrymandering}}, Seeker
+\end{innerlist}
+
+ \item[\textbf{\href{http://www.bbc.co.uk/radio4}{BBC Radio 4:}} \href{http://www.bbc.co.uk/programmes/b0713zdz}{Today Show}] \hfill\textbf{2016}
 \begin{innerlist}
 	\item Interview: \textit{What can we learn in 4 months?}
 \end{innerlist}
 
-\item[\textbf{\href{http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0137685}{Optimism Bias in Fans and Sports Reporters}}] \hfill\textbf{9 Sep 2015}
+\item[\textbf{\href{http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0137685}{Optimism Bias in Fans and Sports Reporters}}] \hfill\textbf{2015}
 \begin{innerlist}
   \item Press Releases: \href{http://www.ox.ac.uk/news/2015-09-09-nfl-fans-and-espn-reporters-overly-optimistic-about-team-prospects}{University of Oxford}, \href{https://www.ucl.ac.uk/news/news-articles/0915/100915-nfl-team-prospects}{UCL}
   \item Media Coverage: \href{http://www.csmonitor.com/Science/2015/0909/NFL-scores-Your-team-is-probably-less-invincible-than-you-imagine}{CS Monitor},
