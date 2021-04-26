@@ -24,19 +24,29 @@
 
 \newcommand{\important}[2]{\colorbox{pink}{\begin{minipage}{\dimexpr\linewidth-2\fboxsep}#1
 \end{minipage}}
-\begin{flushright}
-\begin{minipage}{0.99\dimexpr\linewidth-2\fboxsep}\small
-\emph{Contribution:} #2
-\end{minipage}
-\end{flushright}}
+\if\relax\detokenize{#2}\relax
+    \vspace{2pt}
+  \else
+    \begin{flushright}
+    \begin{minipage}{0.99\dimexpr\linewidth-2\fboxsep}\small
+    \emph{Contribution:} #2
+    \end{minipage}
+    \end{flushright}
+\fi
+}
 
 \newcommand{\paper}[2]{\colorbox{white}{\begin{minipage}{\dimexpr\linewidth-2\fboxsep}#1
 \end{minipage}}
-\begin{flushright}
-\begin{minipage}{0.99\dimexpr\linewidth-2\fboxsep}\small
-\emph{Contribution:} #2
-\end{minipage}
-\end{flushright}}
+\if\relax\detokenize{#2}\relax
+    \vspace{2pt}
+    \else
+    \begin{flushright}
+    \begin{minipage}{0.99\dimexpr\linewidth-2\fboxsep}\small
+    \emph{Contribution:} #2
+    \end{minipage}
+    \end{flushright}
+\fi
+}
 
 % Layout: Puts the section titles on left side of page
 \reversemarginpar
@@ -45,7 +55,7 @@
            includefoot, % Uncomment to put page number above margin
            marginparwidth=30.5mm,    % Length of section titles
            marginparsep=1.5mm,       % Space between titles and text
-           margin=25mm,              % 25mm margins
+           margin=20mm,              % 25mm margins
            includemp]{geometry}
 
 %% More layout: Get rid of indenting throughout entire document
@@ -154,18 +164,20 @@
 \makeheading{Olivia Guest}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{BIO}
+% \section{BIO}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-I am a theoretical psychologist with expertise in computational modelling, and six years postdoctoral experience as a researcher. I work on a range of pure and applied issues in the field including: neuropsychology, model-based fMRI, decision-making, artificial intelligence, political psychology, and the methods and practice of computational research.
+% I am a theoretical psychologist with expertise in computational modelling, and six years postdoctoral experience as a researcher. I work on a range of pure and applied issues in the field including: neuropsychology, model-based fMRI, decision-making, artificial intelligence, political psychology, and the methods and practice of computational research.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{CONTACT}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\vspace{3pt}
+
 \begin{minipage}{.49\textwidth}
 \begin{description}
- \item[Email:] \href{mailto:o.guest@ucl.ac.uk}{o.guest@ucl.ac.uk}
+ \item[Email:] \href{mailto:olivia.guest@ru.nl}{olivia.guest@ru.nl}
 %  \href{mailto:o.guest@rise.org.cy}{o.guest@rise.org.cy}
 %  \href{mailto:contact@oliviaguest.com}{contact@oliviaguest.com}
  \item[Website:] \href{http://oliviaguest.com}{oliviaguest.com}
@@ -184,92 +196,59 @@ I am a theoretical psychologist with expertise in computational modelling, and s
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{QUALIFICATIONS}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\textbf{Ph.D.} \emph{Towards a Unified Computational Account of Semantic Impairments}  \hfill \textbf{2014}
+\vspace{-8pt}
 \begin{outerlist}
-    \item [\href{http://www.bbk.ac.uk/}{Birkbeck}, UK. Supervisors: \emph{Richard P. Cooper}, \emph{Eddy J. Davelaar}]
+\item[\textbf{Ph.D.} \emph{Towards a Unified Computational Account of Semantic Impairments}]  \hfill \textbf{2014}
+
+\begin{innerlist}
+    \item [\textbf{Birkbeck, UK}]
+    \item [Supervisors: \emph{Richard P. Cooper}, \emph{Eddy J. Davelaar}]
+\end{innerlist}
+
+\item[\textbf{M.Sc.} Cognitive and Decision Sciences (Distinction)] \hfill \textbf{2010}
+\begin{innerlist}
+     \item [\textbf{University College London (UCL), UK}]
+\end{innerlist}
+
+\item[\textbf{B.Sc.} Computer Science] \hfill \textbf{2009}
+\begin{innerlist}
+  \item[\textbf{The University of York, UK}]
+\end{innerlist}
 \end{outerlist}
-\vspace{15pt}
 
-\textbf{M.Sc.} Cognitive and Decision Sciences (Distinction) \hfill \textbf{2010}
-\begin{outerlist}
-     \item [\href{http://www.ucl.ac.uk/}{University College London}, UK.]
-\end{outerlist}     
-\vspace{15pt}
-
-\textbf{B.Sc.} Computer Science \hfill \textbf{2009}
-\begin{outerlist}
-  \item[\href{http://www.york.ac.uk/}{The University of York}, UK.]
-\end{outerlist}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{EMPLOYMENT\texorpdfstring{\newline}{ }HISTORY}
+\section{EMPLOYMENT HISTORY}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \textbf{\href{https://www.ru.nl/donders/}{Donders Centre for Cognitive Neuroimaging}, Netherlands}
-  \begin{outerlist}
-  \item[\textit{Postdoctoral Researcher}] \hfill \textbf{2020--}
-    
-%   \begin{innerlist}
-%     \item Deep neural network models of concepts and of face processing. 
-%     \item Funded by EU Horizon 2020, and the Republic of Cyprus.
-%   \end{innerlist}
 
-  \end{outerlist}
-  
-  \vspace{15pt}
-  \textbf{\href{https://rise.org.cy}{RISE}, Cyprus}
-  \begin{outerlist}
-%   \item[\textbf{Research Centre on Interactive Media, Smart Systems and Emerging Technologies}]
-  \item[\textit{Independent Researcher}] \hfill \textbf{2019--2020}
-    
-%   \begin{innerlist}
-%     \item Deep neural network models of concepts and of face processing. 
-%     \item Funded by EU Horizon 2020, and the Republic of Cyprus.
-%   \end{innerlist}
-
-  \end{outerlist}
-  
-  \vspace{15pt}
- 
-  
-\begin{samepage}
-
-\textbf{\href{https://www.ucl.ac.uk/pals/research/experimental-psychology/}{Department of Experimental Psychology}, University College London, UK}
 \begin{outerlist}
-  \item[\textit{Postdoctoral Researcher}] \hfill \textbf{2016--2019}
-  
-%   \begin{innerlist}
-%     \item Deep neural network models of categorisation, and in model-based fMRI.
-%     \item Worked with \href{https://www.ucl.ac.uk/pals/research/experimental-psychology/person/bradley-love/}{Brad Love}.
-%   \end{innerlist}
-  \end{outerlist}
-  \end{samepage}
 
-  \vspace{15pt}
+ \item[\textbf{Donders Centre for Cognitive Neuroimaging, Radboud University}] \hfill
+ \begin{innerlist}
+   \item[\textbf{Netherlands}, \textit{Postdoctoral Researcher}] \hfill\textbf{2020--}
+     \end{innerlist}
 
+  \item[\textbf{Research Centre on Interactive Media, Smart Systems \& Emerging Technologies (\href{http://cyens.org.cy}{CYENS})}] \hfill
+  \begin{innerlist}
+    \item[\textbf{Cyprus}, \textit{Independent Researcher}] \hfill \textbf{2019--2020}
+  \end{innerlist}
 
-  \begin{samepage}
-  \textbf{\href{http://www.psy.ox.ac.uk/}{Department of Experimental Psychology}, University of Oxford, UK}
-  \begin{outerlist}
-  \item[\textit{Postdoctoral Researcher}] \hfill \textbf{2014--2016}
+\item[\textbf{Department of Experimental Psychology, University College London}] \hfill
+\begin{innerlist}
+  \item[\textbf{UK}, \textit{Postdoctoral Researcher}] \hfill \textbf{2016--2019}
+  \end{innerlist}
 
-%   \begin{innerlist}
-%     \item Computational modelling of category learning in infancy
-%     \item Worked with \href{https://www.psy.ox.ac.uk/team/kim-plunkett}{Kim Plunkett}.
-%   \end{innerlist}
+  \item[\textbf{Department of Experimental Psychology, University of Oxford}] \hfill
+    \begin{innerlist}
+  \item[\textbf{UK}, \textit{Postdoctoral Researcher}] \hfill \textbf{2014--2016}
+    \end{innerlist}
+
+\item [\textbf{Department of Psychological Sciences, Birkbeck}] \hfill
+\begin{innerlist}
+  \item[\textbf{UK}, \textit{Graduate Teaching Assistant / Ph.D. student}] \hfill \textbf{2010--2014}
+\end{innerlist}
 \end{outerlist}
-  \vspace{15pt}
-  \end{samepage}
-
-\textbf{\href{http://www.bbk.ac.uk/psychology/}{Department of Psychological Sciences}, \href{http://www.bbk.ac.uk/}{Birkbeck}, UK}
-\begin{outerlist}
-  \item[\textit{Graduate Teaching Assistant / Ph.D. student}] \hfill \textbf{2010--2014}
-
-\end{outerlist}
-
-
-
 
 
 
@@ -286,110 +265,122 @@ I am a theoretical psychologist with expertise in computational modelling, and s
    
  \item[\textbf{Conferences (ad hoc reviewing)}] \hfill
  
-  International Conference on Cognitive Modelling (ICCM), International Conference on Machine Learning (ICML), Scientific Computing with Python Conference (SciPy), EnviroInfo.
+   International Conference on Learning Representations (ICLR), International Conference on Cognitive Modelling (ICCM), International Conference on Machine Learning (ICML), Scientific Computing with Python Conference (SciPy), EnviroInfo.
   
    \item[\textbf{Journals (ad hoc reviewing)}] \hfill
     
-    Cognitive Science Journal, Cognitive Psychology, Memory \& Cognition, PLoS Computational Biology, Journal of Cognitive Neuroscience, PeerJ.
+    Cognitive Neuropsychology,  Cognitive Psychology, Cognitive Science Journal, Journal of Cognitive Neuroscience, Journal of Open Source Education, Memory \& Cognition, PeerJ, PLoS Computational Biology, Royal Society Open Science.
     
    \item[\textbf{Special issue on \href{https://reproducibility-challenge.github.io/neurips2019/dates/}{NeurIPS 2019 Reproducibility Challenge}}] \hfill
    
    Co-editing special issue of Rescience C.
-
  \end{outerlist}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{MAIN PUBLICATIONS}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \textbf{Guest, O.}, Martin, A. E., \& Birhane, A. (in prep.). {There is no such thing as AI}.
+\paper{
+\textbf{Guest, O.} \& Birhane, A. (2021). {Towards decolonising computational sciences}. \textit{Women, Gender \& Research.}\newline
+ \href{https://doi.org/10.7146/kkf.v29i2.124899}{doi.org/10.7146/kkf.v29i2.124899}
+}{}
+
+\paper{
+\textbf{Guest, O.} \& Martin, A. E. (2021).  How computational modeling can force theory building in psychological science. \textit{Perspectives on Psychological Science}.\newline
+ \href{https://doi.org/10.1177/1745691620970585}{doi.org/10.1177/1745691620970585}
+}{}
+% {We argue for the wide adoption of computational modelling in psychology, and provide a practical framework (with examples) to support this goal.}
+
+\paper{
+Barlas, P., Kyriakou, K., \textbf{Guest, O.}, Kleanthous, S., \& Otterbacher, J. (2021). {To ``See'' is to Stereotype: Image Tagging Algorithms, Gender Recognition, and the Accuracy-Fairness Trade-off}. \textit{The 23rd ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW 2020)}. \newline\href{https://doi.org/10.1145/3432931}{doi.org/10.1145/3432931}
+}{}
+% {Several automatic gender detection systems are fooled by gender-stereotyped backgrounds. The system that is most human-like in its operation is also the one that is best at recognizing gender. \emph{(Peer reviewed conferencing proceedings are typical in Computer Science)}.}
+
+
+\paper{
+Bobadilla Suárez, S., \textbf{Guest, O.}, \& Love, B. C. (2020).  {Subjective value and decision entropy are jointly encoded by aligned gradients across the human brain}. \textit{Communications Biology}.
+\newline
+\href{https://doi.org/10.1038/s42003-020-01315-3}{doi.org/10.1038/s42003-020-01315-3}
+}
+{}
+% {Using model-based fMRI, we demonstrated that areas of the brain, previously thought to be responsive to subjective outcome value in a gambling task, are actually more responsive to decision confidence than subjective value.}
+
+
+
+\paper{Botvinik-Nezer, R. et al. (2020). {Variability in the analysis of a single neuroimaging dataset by many teams}. \textit{Nature}.\newline \href{https://doi.org/10.1038/s41586-020-2314-9}{doi.org/10.1038/s41586-020-2314-9}}
+{}
+
+\paper{
+\textbf{Guest, O.}, Caso A. \& Cooper, R. P. (2020).  {On Simulating Neural Damage in Connectionist Networks}. \textit{Computational Brain \& Behavior} \newline
+ \href{https://doi.org/10.1007/s42113-020-00081-z}{doi.org/10.1007/s42113-020-00081-z}}
+ {}
+% {We re-evaluate two classic connectionist models of neuropsychological deficits. In the case of the 'hub and spoke' model of semantic dementia, the original results are not robust.} 
+
+\paper{\textbf{Guest, O.}, Kanayet, F. J., \& Love, B. C. (2019). {Gerrymandering and Computational Redistricting}. \textit{Journal of Computational Social Science}. \newline
+\href{https://dx.doi.org/10.1007/s42001-019-00053-9}{doi.org/10.1007/s42001-019-00053-9}}
+{}
+% {Partisan gerrymandering is a threat to democracy, and at the same time the drawing of optimal boundaries is beyond human capabilities. We created a computational model that draws boundaries based on a set of open principles, and does so more optimally than humans}.
+
+
+\paper{
+\textbf{Guest, O.} \& Love, B. C. (2017). {What the Success of Brain Imaging Implies about the Neural Code}. \textit{eLife}, 6:e21397. \newline
+\href{http://dx.doi.org/10.7554/eLife.21397}{doi.org/10.7554/eLife.21397}
+}{}
+% {Through proof and simulation, we determine which neural coding schemes are plausible given fMRI’s successes and its limitations.
+% Our results have implications for the nature of the neural code and ventral stream, as well as what can be successfully investigated with fMRI.}
+% \vspace{8pt}
+
+\paper{Rougier, N. P. et al. (2017). \href{http://dx.doi.org/10.7717/peerj-cs.142}{Sustainable computational science: the ReScience initiative}. \textit{PeerJ Computer Science}.\newline \href{http://dx.doi.org/10.7717/peerj-cs.142}{doi.org/10.7717/peerj-cs.142}}
+{}
+
+\paper{Love, B. C., Kopeć, Ł. \& \textbf{Guest, O.} (2015). {Optimism Bias in Fans and Sports Reporters}. \textit{PLoS ONE}. \newline
+\href{http://dx.doi.org/10.1371/journal.pone.0137685}{doi.org/10.1371/journal.pone.0137685}}
+{}
+% {We asked NFL fans to predict how many games teams they like and dislike would win in the 2015 season.
+% Fans, like ESPN reporters assigned to cover a team, are overly optimistic about their team's prospects while the opposite pattern holds for teams that fans disliked.}
+% \vspace{8pt}
+
+\paper{
+Cooper, R. P. \& \textbf{Guest, O.} (2014).  {Implementations are not specifications: specification, replication and experimentation in computational cognitive modeling}. \textit{Cognitive Systems Research}. \newline
+\href{http://dx.doi.org/10.1016/j.cogsys.2013.05.001}{doi.org/10.1016/j.cogsys.2013.05.001}}
+{}
+% {The specification of a computational theory, and the details of the way one implements that specification in a simulation, are importantly different. Failure to fully appreciate this difference can lead to undetected poor reproducibilty. Replication of a model's predictions through independent implementation of a set of clear specifications is one answer.}
+
 % \vspace{8pt}
 
 
-\textbf{Guest, O.} \& Birhane, A. (invited). {Towards decolonising computational sciences}. \textit{Women, Gender \& Research}
-\vspace{8pt}
-
-\important{
-\textbf{Guest, O.} \& Martin, A. E. (2020).  \href{https://doi.org/10.31234/osf.io/rybh9}{How computational modeling can force theory building in psychological science}. \textit{Perspectives on Psychological Science}. \href{https://doi.org/10.31234/osf.io/rybh9}{doi.org/10.31234/osf.io/rybh9}}
-{We argue for the wide adoption of computational modelling in psychology, and provide a practical framework (with examples) to support this goal.}
-
-
-
-\paper{Bobadilla Suárez, S., \textbf{Guest, O.}, \& Love, B. C. (revise and resubmit).  {The neural link between subjective value and decision entropy}. \textit{Communications Biology}.
-\newline
-\href{https://doi.org/10.1101/2020.02.18.954362}{doi.org/10.1101/2020.02.18.954362}}
-{Using model-based fMRI, we demonstrated that areas of the brain, previously thought to be responsive to subjective outcome value in a gambling task, are actually more responsive to decision confidence than subjective value.}
-
-\paper{Barlas, P., Kyriakou, K., \textbf{Guest, O.}, Kleanthous, S., \& Otterbacher, J. (accepted). {To ``See'' is to Stereotype: Image Tagging Algorithms, Gender Recognition, and the Accuracy-Fairness Trade-off}. \textit{The 23rd ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW 2020)}.}{Several automatic gender detection systems are fooled by gender-stereotyped backgrounds. The system that is most human-like in its operation is also the one that is best at recognizing gender. \emph{(Peer reviewed conferencing proceedings are typical in Computer Science)}.}
-
-\important{
-\textbf{Guest, O.}, Caso A. \& Cooper, R. P. (2020).  {On Simulating Neural Damage in Connectionist Networks}. \textit{Computational Brain \& Behavior}
- \href{https://doi.org/10.1007/s42113-020-00081-z}{doi.org/10.1007/s42113-020-00081-z}}
-{We re-evaluate two classic connectionist models of neuropsychological deficits. In the case of the 'hub and spoke' model of semantic dementia, the original results are not robust.} 
-
-\vspace{8pt}
-
-\important{\textbf{Guest, O.}, Kanayet, F. J., \& Love, B. C. (2019). \href{https://dx.doi.org/10.1007/s42001-019-00053-9}{Gerrymandering and Computational Redistricting}. \textit{Journal of Computational Social Science}. 
-\href{https://dx.doi.org/10.1007/s42001-019-00053-9}{doi.org/10.1007/s42001-019-00053-9}}
-{Partisan gerrymandering is a threat to democracy, and at the same time the drawing of optimal boundaries is beyond human capabilities. We created a computational model that draws boundaries based on a set of open principles, and does so more optimally than humans}.
-
-\vspace{8pt}
-
-\important{
-\textbf{Guest, O.} \& Love, B. C. (2017). \href{http://dx.doi.org/10.7554/eLife.21397}{What the Success of Brain Imaging Implies about the Neural Code}. \textit{eLife}, 6:e21397.
-\href{http://dx.doi.org/10.7554/eLife.21397}{doi.org/10.7554/eLife.21397}
-}{Through proof and simulation, we determine which neural coding schemes are plausible given fMRI’s successes and its limitations.
-Our results have implications for the nature of the neural code and ventral stream, as well as what can be successfully investigated with fMRI.
-}
-\vspace{8pt}
-
-\paper{Love, B. C., Kopeć, Ł. \& \textbf{Guest, O.} (2015). \href{http://dx.doi.org/10.1371/journal.pone.0137685}{Optimism Bias in Fans and Sports Reporters}. \textit{PLoS ONE}, 10 (9).
-\href{http://dx.doi.org/10.1371/journal.pone.0137685}{doi.org/10.1371/journal.pone.0137685}}{We asked NFL fans to predict how many games teams they like and dislike would win in the 2015 season.
-Fans, like ESPN reporters assigned to cover a team, are overly optimistic about their team's prospects while the opposite pattern holds for teams that fans disliked.}
-\vspace{8pt}
-
-\important{
-Cooper, R. P. \& \textbf{Guest, O.} (2014).  \href{http://dx.doi.org/10.1016/j.cogsys.2013.05.001}{Implementations are not specifications: specification, replication and experimentation in computational cognitive modeling}. \textit{Cognitive Systems Research}, 27, 42--49.
-\href{http://dx.doi.org/10.1016/j.cogsys.2013.05.001}{doi.org/10.1016/j.cogsys.2013.05.001}}{The specification of a computational theory, and the details of the way one implements that specification in a simulation, are importantly different. Failure to fully appreciate this difference can lead to undetected poor reproducibilty. Replication of a model's predictions through independent implementation of a set of clear specifications is one answer.}
-
-\vspace{8pt}
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{OTHER PUBLICATIONS}
+\section{OTHER ARTICLES \& PREPRINTS}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-Whitaker, K. J. \& \textbf{Guest, O.} (in press).  {\#bropenscience is broken science} \textit{The Psychologist}.
-\vspace{8pt}
+\paper{Levitis, E. et al. (2021). Centering inclusivity in the design of online conferences. \textit{PsyArXiv}. \newline
+\href{https://doi.org/10.31234/osf.io/vj5tu}{doi.org/10.31234/osf.io/vj5tu}}{}
+ 
 
-\paper{Botvinik-Nezer, R. et al. (2020). \href{https://doi.org/10.1038/s41586-020-2314-9}{Variability in the analysis of a single neuroimaging dataset by many teams}. \textit{Nature}. \href{https://doi.org/10.1038/s41586-020-2314-9}{doi.org/10.1038/s41586-020-2314-9}}{I ran the model-based fMRI analysis for one of the 70 teams on this project.}
+\paper{Whitaker, K., \& \textbf{Guest, O.} (2020). {\#bropenscience is broken science}. \textit{The Psychologist}. \newline
+\href{https://thepsychologist.bps.org.uk/volume-33/november-2020/bropenscience-broken-science}{doi.org/10.5281/zenodo.4099011}}
+{}
 
-Rougier, N. P. et al. (2017). \href{http://dx.doi.org/10.7717/peerj-cs.142}{Sustainable computational science: the ReScience initiative}. \textit{PeerJ Computer Science}. \href{http://dx.doi.org/10.7717/peerj-cs.142}{doi.org/10.7717/peerj-cs.142}
-\vspace{8pt}
 
-Love, B. C., \textbf{Guest, O.}, Slomka, P., Navarro, V., Wasserman, E. (2017). \href{https://mindmodeling.org/cogsci2017/papers/0283/index.html}{Deep Networks as Models of Human and Animal Categorization}. \textit{In Proceedings of the 39th Annual Meeting of	the	Cognitive Science	Society}. (pp. 1457--1458).
-\vspace{8pt}
+\paper{
+Love, B. C., \textbf{Guest, O.}, Slomka, P., Navarro, V., Wasserman, E. (2017). \href{https://mindmodeling.org/cogsci2017/papers/0283/index.html}{Deep Networks as Models of Human and Animal Categorization}. \textit{In Proceedings of the 39th Annual Meeting of	the	Cognitive Science	Society}.}
+{}
 
-\textbf{Guest, O.} \& Rougier, N. P. (2016). \href{https://oliviaguest.com/doc/guest_rougier_2016.pdf}{What is computational reproducibility?} \textit{IEEE CIS Newsletter on Cognitive and Developmental Systems}, 13 (1).
-\vspace{8pt}
+\paper{\textbf{Guest, O.} \& Rougier, N. P. (2016). \href{https://oliviaguest.com/doc/guest_rougier_2016.pdf}{What is computational reproducibility?} \textit{IEEE CIS Newsletter on Cognitive and Developmental Systems}.}{}
 
-\textbf{Guest, O.} (2016). \href{http://dx.doi.org/10.15200/winn.146590.01538}{Crisis in What Exactly?}. \textit{The Winnower}. \newline
-\href{http://dx.doi.org/10.15200/winn.146590.01538}{doi.org/10.15200/winn.146590.01538}
-\vspace{8pt}
+\paper{\textbf{Guest, O.} (2016). Crisis in What Exactly? \textit{The Winnower}. \newline
+\href{http://dx.doi.org/10.15200/winn.146590.01538}{doi.org/10.15200/winn.146590.01538}}{}
 
-\textbf{Guest, O.}, Cooper, R. P. \& Davelaar, E. J. (2014).   \href{http://oliviaguest.com/doc/guest_14.pdf}{The Influence of Implementation on ``Hub'' Models of Semantic Cognition}. In J. Mayor, P. Gomez (Eds.), \textit{\href{http://www.worldscientific.com/worldscibooks/10.1142/8747}{Computational Models of Cognitive Processes}} (pp. 155--169). World Scientific.
-\vspace{8pt}
+\paper{\textbf{Guest, O.}, Cooper, R. P. \& Davelaar, E. J. (2014).   \href{http://oliviaguest.com/doc/guest_14.pdf}{The Influence of Implementation on ``Hub'' Models of Semantic Cognition}. In J. Mayor, P. Gomez (Eds.), \textit{Computational Models of Cognitive Processes}.}{}
 
-\textbf{Guest, O.}, Cooper, R. P. \& Davelaar, E. J. (2012). \href{http://eprints.bbk.ac.uk/6758/}{Semantic Cognition: A Re-examination of the Recurrent Network ``Hub'' Model}. \textit{In Proceedings of the Ninth International Conference on Cognitive Modelling.} Berlin, Germany. April. (pp. 259--264). Berlin, Germany. April. Universit\"{a}tsverlag der TU Berlin.
+\paper{\textbf{Guest, O.}, Cooper, R. P. \& Davelaar, E. J. (2012). \href{http://eprints.bbk.ac.uk/6758/}{Semantic Cognition: A Re-examination of the Recurrent Network ``Hub'' Model}. \textit{In Proceedings of the Ninth International Conference on Cognitive Modelling.}}{}
 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{SELECTED INVITED\texorpdfstring{\newline}{ }TALKS}
+\section{SELECTED INVITED\texorpdfstring{\newline}{ }TALKS \& WORKSHOPS}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 % \textbf{\href{https://www.inria.fr/en/centre-bordeaux-sud-ouest}{Bordeaux-Sud-Ouest Inria Research Centre}} 
 % \begin{outerlist}
@@ -404,9 +395,22 @@ Love, B. C., \textbf{Guest, O.}, Slomka, P., Navarro, V., Wasserman, E. (2017). 
 % \vspace{8pt}
 
 
+\textbf{\href{https://www.inria.fr/en/centre-bordeaux-sud-ouest}{Society for Personality and Social Psychology’s Annual Convention (SPSP) 2021}} 
+\begin{outerlist}
+  \item[] \textit{Austin, Texas (Virtual)}\hfill\textbf{11 Feb 2021}
+  \begin{innerlist}
+    \item Workshop: \textit{Computational Modeling and Theory-Building}
+    % \item Organiser: John K. Sakaluk
+
+
+  \end{innerlist}
+\end{outerlist}
+\vspace{8pt}
+
+
 \textbf{\href{https://www.eventbrite.co.uk/o/reproducibilitea-ucl-19116673509}{ReproducibiliTea UCL}} 
 \begin{outerlist}
-  \item[] \textit{UCL, UK}\hfill\textbf{14 Sep 2020}
+  \item[] \textit{UCL, UK (Virtual)}\hfill\textbf{14 Sep 2020}
   \begin{innerlist}
     \item Talk: \textit{How computational modeling can force theory building in psychological science}
     \item Organisers: Emma Norris, Tabea Schoeler, \&  Jessie Baldwin
@@ -417,7 +421,7 @@ Love, B. C., \textbf{Guest, O.}, Slomka, P., Navarro, V., Wasserman, E. (2017). 
 
 \textbf{\href{http://mathpsych.org/conferences/2020/}{MathPsych/ICCM 2020}} 
 \begin{outerlist}
-  \item[] \textit{Toronto, Canada}\hfill\textbf{25--28 Jul 2020}
+  \item[] \textit{Toronto, Canada (Virtual)}\hfill\textbf{25--28 Jul 2020}
   \begin{innerlist}
     \item Symposium: \textit{Perspectives on ``What makes a good theory?''}
     \item Organisers: Iris van Rooij \& Chris Donkin 
@@ -429,7 +433,7 @@ Love, B. C., \textbf{Guest, O.}, Slomka, P., Navarro, V., Wasserman, E. (2017). 
 
 \textbf{\href{https://www.kcl.ac.uk/events/series/riot-science-club}{RIOT Science Club}} 
 \begin{outerlist}
-  \item[] \textit{King's College London, London, UK}\hfill\textbf{2 Jul 2020}
+  \item[] \textit{King's College London, London, UK (Virtual)}\hfill\textbf{2 Jul 2020}
   \begin{innerlist}
     \item Talk: \href{https://youtu.be/IhlF0B_IQJE}{\textit{How computational modeling can force theory building in psychological science}}
     \item Organiser: Miguel Xochicale
@@ -443,7 +447,7 @@ Love, B. C., \textbf{Guest, O.}, Slomka, P., Navarro, V., Wasserman, E. (2017). 
 
 \textbf{\href{https://github.com/annahensch/Glasgow-ReproducibiliTea}{ReproducibiliTea Glasgow}} 
 \begin{outerlist}
-  \item[] \textit{Univeristy of Glasgow, UK}\hfill\textbf{20 Apr 2020}
+  \item[] \textit{Univeristy of Glasgow, UK (Virtual)}\hfill\textbf{20 Apr 2020}
   \begin{innerlist}
     \item Talk: \textit{\href{https://www.youtube.com/watch?v=_WV7EFvFAB8}{How computational modeling can force theory building in psychological science}}
     \item Organisers: Anna Henschel \& Stephanie Allan
@@ -527,7 +531,7 @@ Love, B. C., \textbf{Guest, O.}, Slomka, P., Navarro, V., Wasserman, E. (2017). 
 \end{outerlist}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{CONFERENCE \texorpdfstring{\newline}{ } PRESENTATIONS}
+\section{CONFERENCE TALKS}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \textbf{\href{http://mathpsych.org/conferences/2020/}{MathPsych/ICCM 2020}}
@@ -707,7 +711,6 @@ Love, B. C., \textbf{Guest, O.}, Slomka, P., Navarro, V., Wasserman, E. (2017). 
   \end{innerlist}
 \end{outerlist}
 \vspace{8pt}
-\end{samepage}
 
 \textbf{\href{https://sites.google.com/site/introcompcog/}{Introduction to Computational Cognitive Modelling Workshop}}
 \begin{outerlist}
@@ -717,6 +720,7 @@ Love, B. C., \textbf{Guest, O.}, Slomka, P., Navarro, V., Wasserman, E. (2017). 
      \item Prepared slides, exercises, created website.
   \end{innerlist}
 \end{outerlist}
+\end{samepage}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{TEACHING}
@@ -789,24 +793,70 @@ UK}
    \item  Web design (e.g., \href{http://bradlove.org}{bradlove.org}, \href{http://neuroplausible.com}{neuroplausible.com}, \href{http://oliviaguest.com}{oliviaguest.com}, \href{http://redistrict.science}{redistrict.science}, \href{http://compcog.science}{compcog.science}).
  \item Graphic design and image editing (i.e., Adobe Suite, GIMP, Inkscape).
  \item GUI design (i.e., PyGTK, GTK+).
- \item Artificial neural networks (e.g., TensorFlow).
+%  \item Artificial neural networks (e.g., TensorFlow).
  \item Unix (e.g., CLI, server administration).
  \end{innerlist}
- \item[\textbf{Programming}] \hfill
+ \item[\textbf{Programming language experience}] \hfill
  
 Ada, C, \CC, C\#, Java, JavaScript, \LaTeX, MATLAB,  OpenGL, Pascal, PHP, Prolog, Python, R, Scheme, SQL, Visual Basic.
  \end{outerlist}
-
+ 
+ 
+ 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{THINGS I HAVE NAMED}
+\section{REFEREES}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{-10pt}
 
-\begin{description}
-\item[Labs:] CitAI, Psicofisika
-  \item[Organisations:] AntiRa
-  \item[Software:] Caladown
+\begin{outerlist}
+\item[\textbf{Andrea E. Martin},] \emph{Current PI/Employer}   \hfill \textbf{2020--}
+\begin{innerlist}
+    \item Email: \href{mailto:Andrea.Martin@mpi.nl}{andrea.martin@mpi.nl}
+    \item Job title: Research Group Leader
+    \item {Affiliations:} DCCN, Radboud, NL \& MPI for Psycholinguistics, NL
+    \item Website: \href{http://andreaemartin.com/}{andreaemartin.com}
+\end{innerlist}
+
+
+\item[\textbf{Bradley C. Love},] \emph{Previous PI/Employer}   \hfill \textbf{2016--2019}
+\begin{innerlist}
+    \item Email: \href{mailto:b.love@ucl.ac.uk}{b.love@ucl.ac.uk}
+    \item Job title: Professor of Cognitive and Decision Sciences 
+    \item {Affiliations:} Experimental Psychology, UCL, UK \& Alan Turing Institue, UK
+    \item Website: \href{http://bradlove.org/}{bradlove.org}
+\end{innerlist}
+
+\item[\textbf{Nicolas P. Rougier},] \emph{Colleague (at ReScience) and collaborator}   \hfill \textbf{2015--}
+\begin{innerlist}
+    \item Email: \href{mailto:Nicolas.Rougier@inria.fr }{nicolas.rougier@inria.fr}
+    \item Job title: Professor --- Team Leader
+    \item {Affiliations:} Inria (National Institute for Research in Digital Science and Technology), France \& Institute of Neurodegenerative Diseases, University of Bordeaux, France
+    \item Website: \href{https://www.labri.fr/perso/nrougier/}{www.labri.fr/perso/nrougier}
+\end{innerlist}
+
+
+\item[\textbf{Richard P. Cooper},] \emph{M.Sc. \& Ph.D. Supervisor}   \hfill \textbf{2009--2014}
+\begin{innerlist}
+    \item Email: \href{mailto:r.cooper@bbk.ac.uk}{r.cooper@bbk.ac.uk}
+    \item Job title: Professor of Cognitive Science 
+    \item {Affiliations:} Psychological Sciences, Birkbeck, UK
+    \item Website: \href{http://ccnl.bbk.ac.uk/}{ccnl.bbk.ac.uk}
+\end{innerlist}
+
+
+
+\end{outerlist}
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{THINGS I HAVE NAMED}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \vspace{-10pt}
+
+% \begin{description}
+% \item[Labs:] CitAI, Psicofisika
+%   \item[Organisations:] AntiRa
+%   \item[Software:] Caladown
   
-  \end{description}
+%   \end{description}
 \end{document}
 % %%%%%%%%%%%%%%%%%%%%%%%%%% End CV Document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
